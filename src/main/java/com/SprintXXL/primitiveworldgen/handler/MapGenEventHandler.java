@@ -5,11 +5,10 @@ import net.minecraftforge.event.terraingen.InitMapGenEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
-import static com.SprintXXL.primitiveworldgen.config.WorldGenConfig.DISABLE_CAVES;
-import static com.SprintXXL.primitiveworldgen.config.WorldGenConfig.DISABLE_RAVINES;
+import static com.SprintXXL.primitiveworldgen.config.WorldGenConfig.*;
 
 @Mod.EventBusSubscriber
-public class WorldGenEventHandler {
+public class MapGenEventHandler {
 
     @SubscribeEvent
     public void onInitMapGen(InitMapGenEvent event) {

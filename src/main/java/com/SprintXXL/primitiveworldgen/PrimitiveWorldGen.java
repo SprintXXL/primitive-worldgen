@@ -1,6 +1,8 @@
 package com.SprintXXL.primitiveworldgen;
 
-import com.SprintXXL.primitiveworldgen.handler.WorldGenEventHandler;
+import com.SprintXXL.primitiveworldgen.handler.MapGenEventHandler;
+import com.SprintXXL.primitiveworldgen.handler.OreGenEventHandler;
+import com.SprintXXL.primitiveworldgen.handler.PopulateEventHandler;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -26,6 +28,8 @@ public class PrimitiveWorldGen
     @EventHandler
     public void init(FMLInitializationEvent event) {
 
-        MinecraftForge.TERRAIN_GEN_BUS.register(new WorldGenEventHandler());
+        MinecraftForge.TERRAIN_GEN_BUS.register(new MapGenEventHandler());
+        MinecraftForge.TERRAIN_GEN_BUS.register(new OreGenEventHandler());
+        MinecraftForge.TERRAIN_GEN_BUS.register(new PopulateEventHandler());
     }
 }
