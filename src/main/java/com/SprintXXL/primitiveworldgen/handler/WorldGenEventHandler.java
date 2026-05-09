@@ -6,6 +6,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 import static com.SprintXXL.primitiveworldgen.config.WorldGenConfig.DISABLE_CAVES;
+import static com.SprintXXL.primitiveworldgen.config.WorldGenConfig.DISABLE_RAVINES;
 
 @Mod.EventBusSubscriber
 public class WorldGenEventHandler {
@@ -14,6 +15,10 @@ public class WorldGenEventHandler {
     public void onInitMapGen(InitMapGenEvent event) {
 
         if (event.getType() == InitMapGenEvent.EventType.CAVE && DISABLE_CAVES) {
+            event.setNewGen(new EmptyGenerator());
+        }
+
+        if (event.getType() == InitMapGenEvent.EventType.RAVINE && DISABLE_RAVINES) {
             event.setNewGen(new EmptyGenerator());
         }
     }
