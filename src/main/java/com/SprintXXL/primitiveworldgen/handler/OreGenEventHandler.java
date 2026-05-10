@@ -20,5 +20,26 @@ public class OreGenEventHandler {
         if (event.getType() == OreGenEvent.GenerateMinable.EventType.GRAVEL && DISABLE_UNDERGROUND_GRAVEL) {
             event.setResult(Event.Result.DENY);
         }
+        if (event.getType() == OreGenEvent.GenerateMinable.EventType.EMERALD) {
+            event.setResult(Event.Result.DENY);
+        }
+        if (event.getType() == OreGenEvent.GenerateMinable.EventType.IRON) {
+            event.setResult(Event.Result.DENY);
+        }
+        if (event.getType() == OreGenEvent.GenerateMinable.EventType.GOLD) {
+            event.setResult(Event.Result.DENY);
+        }
+        if (event.getType() == OreGenEvent.GenerateMinable.EventType.REDSTONE) {
+            event.setResult(Event.Result.DENY);
+        }
+        if (event.getType() == OreGenEvent.GenerateMinable.EventType.DIAMOND) {
+            event.setResult(Event.Result.DENY);
+        }
+        if (event.getType() == OreGenEvent.GenerateMinable.EventType.COAL) {
+            event.setResult(Event.Result.DENY);
+        }
+        if (event.getType() == OreGenEvent.GenerateMinable.EventType.LAPIS) {
+            event.setResult(Event.Result.DENY);
+        }
     }
 }

@@ -15,7 +15,7 @@ public class PrimitiveWorldGen
 {
     public static final String MODID = "primitiveworldgen";
     public static final String NAME = "Primitive WorldGen";
-    public static final String VERSION = "0.1.0";
+    public static final String VERSION = "0.3.0";
 
     private static Logger logger;
 
@@ -29,7 +29,7 @@ public class PrimitiveWorldGen
     public void init(FMLInitializationEvent event) {
 
         MinecraftForge.TERRAIN_GEN_BUS.register(new MapGenEventHandler());
-        MinecraftForge.TERRAIN_GEN_BUS.register(new OreGenEventHandler());
+        MinecraftForge.ORE_GEN_BUS.register(new OreGenEventHandler());
         MinecraftForge.TERRAIN_GEN_BUS.register(new PopulateEventHandler());
     }
 }
