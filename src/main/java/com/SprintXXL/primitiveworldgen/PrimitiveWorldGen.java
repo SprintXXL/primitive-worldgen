@@ -15,7 +15,7 @@ public class PrimitiveWorldGen
 {
     public static final String MODID = "primitiveworldgen";
     public static final String NAME = "Primitive WorldGen";
-    public static final String VERSION = "0.3.0";
+    public static final String VERSION = "0.4.0";
 
     private static Logger logger;
 
